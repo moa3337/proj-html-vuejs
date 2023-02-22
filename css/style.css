@@ -1,21 +1,30 @@
+/*** STYLE BOTTONI ***/
 .but1 {
     background-color: #FFFFFF;
     border: 3px solid #E1C0B0;
-    padding: 12px 35px;
+    padding: 0.9rem 2rem;
     font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.but2 {
+    background-color: #D8F0E3;
+    padding: 1rem 3rem;
+    font-size: 10px;
+    border: 0;
+    letter-spacing: 4px;
 }
 
 .but1:hover {
     background-color: #E1C0B0;
 }
 
-.but2 {
-    background-color: #D8F0E3;
-    padding: 1rem 4rem;
-    font-size: 10px;
-    border: 0;
+/*style shadow menu*/
+.shad:hover {
+    text-shadow: 1px 3px 3px #E1C0B0;
 }
 
+/*** STYLE JUMBOTRON ***/
 .col-6 {
     background-color: #FFFFFF;
     position: relative;
@@ -25,6 +34,19 @@
     width: 16rem;
 }
 
+.slider {
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #E1C0B0;
+}
+
+.slider:hover {
+    scale: 1.4;
+}
+
+/*foglie in absolute*/
 .leaf1 {
     position: absolute;
     top: 0;
@@ -61,6 +83,7 @@
     right: 7%;
 }
 
+/*** STYLE SEZIONE CARDS ***/
 .col-4 {
     position: relative;
     width: 100%;
@@ -92,12 +115,15 @@
     opacity: 1;
 }
 
+
+/*** STYLE SEZIONE "WORK PROCESS" ***/
 .col-9 {
     position: relative;
 }
 
 .col-3 {
     z-index: 10;
+    position: relative;
 }
 
 .line {
@@ -128,19 +154,20 @@
     color: #EB6950;
 }
 
-.p2 {
-    font-size: 12px;
-}
-
+/*** STYLE SECONDO JUMBOTRON ***/
 .jumbo-2 {
     background-image: url(../pictures/h-2-background-1.jpg);
     background-size: cover;
 }
 
-.by {
-    font-size: 10px;
+.flag {
+    position: absolute;
+    left: 2rem;
+    top: -1rem;
+    cursor: pointer;
 }
 
+/*** STYLE DEL FOOTER ***/
 .footer {
     background-color: #C0E1CF;
 }
@@ -149,18 +176,15 @@
     position: relative;
 }
 
-.slider {
-    width: 8px;
-    height: 8px;
-    margin: 5px;
-    cursor: pointer;
-    background-color: #E1C0B0;
+/*** STYLE UTILS ***/
+.p2 {
+    font-size: 12px;
 }
 
-.slider:hover {
-    scale: 1.4;
+.by {
+    font-size: 10px;
 }
 
-.shad:hover {
-    text-shadow: 1px 3px 3px #E1C0B0;
+.google-font {
+    font-family: 'Libre Caslon Text', serif;
 }

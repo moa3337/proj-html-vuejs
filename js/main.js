@@ -3,6 +3,7 @@ const { createApp } = Vue;
 const app = createApp({
     data() {
         return {
+            /* ARRAY CON ELEMENTI DEL MENU */
             menu: [
                 'HOME',
                 'PAGES',
@@ -11,25 +12,16 @@ const app = createApp({
                 'SHOP',
                 'ELEMENTS'
             ],
+
             showList: false,
         };
     },
+    /* METODO PER MOSTRARE IL MENU AL "CLICK" */
     methods: {
-        toggleLIst() {
+        iconMenu() {
             this.showList = !this.showList;
         },
     },
 });
 
 app.mount("#app");
-
-/*
-{
-    home: 'HOME',
-    page: 'PAGES',
-    portf: 'PORTFOLIO',
-    blog: 'BLOG',
-    shop: 'SHOP',
-    page: 'PAGES'
-},
-*/

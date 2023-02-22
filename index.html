@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@1&display=swap" rel="stylesheet">
     <!--script js-->
     <script type="text/javascript" src="./js/main.js" defer></script>
     <!--script Vue-->
@@ -39,7 +43,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a @click.prevent="toggleLIst" class="me-2" href="">
+                        <a @click.prevent="iconMenu" class="me-2" href="">
                             <img class="w-75" src="./pictures/svg/svg-1.svg" alt="">
                         </a>
                     </nav>
@@ -50,15 +54,15 @@
         <!-- MAIN -->
         <main>
             <div class="container-fluid">
+
                 <!-- JUMBOTRON -->
                 <div class="row mt-5 mb-5">
-
                     <!--parte sx jumbo-->
                     <div class="col-6 d-flex justify-content-end">
                         <div class="w-75 mt-5">
                             <h1 class="fw-light" style="font-size: 65px;">
                                 Devotion that<br>never
-                                <span class="fst-italic fw-bold">ends</span>
+                                <span class="google-font fw-bold">ends</span>
                             </h1>
                             <p class="text-black-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
                                 Dolorem deleniti excepturi perferendis aliquam.
@@ -99,6 +103,8 @@
                             class="fa-solid fa-chevron-right me-3 rounded-circle position-absolute top-50 end-0 translate-middle-y"></i>
                     </div>
                 </div>
+
+                <!--pallini per lo slider-->
                 <div class="d-flex justify-content-center">
                     <div class="slider rounded-circle"></div>
                     <div class="slider rounded-circle"></div>
@@ -197,7 +203,7 @@
                     <div class="col-12 text-center m-5">
                         <h2 class="fw-light" style="font-size: 50px;">
                             Working
-                            <span class="fw-bold fst-italic">process</span>
+                            <span class="fw-bold google-font">process</span>
                         </h2>
                     </div>
                     <div class="col-9">
@@ -251,7 +257,7 @@
                     <div class="col-12 text-center mt-5 p-5">
                         <h2 class="fw-light m-3" style="font-size: 50px;">
                             Want work with us? Send us
-                            <span class="fw-bold fst-italic">a message!</span>
+                            <span class="fw-bold google-font">a message!</span>
                         </h2>
                         <p class="text-black-50">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -269,6 +275,7 @@
                 <div class="row  justify-content-center m-5">
                     <div class="col-3">
                         <img class="w-100" src="./pictures/h-2-blog-img-1.jpg" alt="">
+                        <img class="flag" src="./pictures/flag.1.png" alt="">
                         <p class="fs-5 lh-sm mt-3">
                             This way, loves: a detailed guide
                             through new design <br>
@@ -277,6 +284,7 @@
                     </div>
                     <div class="col-3">
                         <img class="w-100" src="./pictures/h-2-blog-img-2.jpg" alt="">
+                        <img class="flag" src="./pictures/flag.2.png" alt="">
                         <p class="fs-5 lh-sm mt-3">
                             I try to give people a different way
                             of looking art <br>
@@ -285,6 +293,7 @@
                     </div>
                     <div class="col-3">
                         <img class="w-100" src="./pictures/h-2-blog-img-3.jpg" alt="">
+                        <img class="flag" src="./pictures/flag.3.png" alt="">
                         <p class="fs-5 lh-sm mt-3">
                             Introduce Richard Loperrière of
                             those amazing features <br>
@@ -292,6 +301,7 @@
                         </p>
                     </div>
                 </div>
+
                 <!--arrow-->
                 <a href="">
                     <img class="position-absolute top-0 end-0 footer p-1" src="./pictures/svg/svg-2.svg" alt="">
