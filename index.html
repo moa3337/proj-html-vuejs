@@ -23,30 +23,23 @@
 <body>
     <div id="app">
         <!-- SEZIONE NAV-BAR -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-
-                <!--nav-bar-->
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">
+                <!--nav-bar sx-->
+                <div class="collapse navbar-collapse d-flex justify-content-between">
+                    <a class="navbar-brand ms-3" href="#">
                         <img class="w-75" src="./pictures/logo-sidearea-1.png" alt="">
                     </a>
+                    <!--nav-bar dx-->
                     <nav class="d-flex">
                         <ul class="navbar-nav" v-show="showList">
                             <li v-for="link in menu" class="fw-semibold me-3 ms-3 by">
-                                <a class="nav-link text-dark" href="">
+                                <a class="nav-link text-dark shad" href="">
                                     {{ link }}
                                 </a>
                             </li>
-                            <!--
-                                <li class="by"><a class="nav-link text-dark" href="">PAGES</a></li>
-                                <li class="by"><a class="nav-link text-dark" href="">PORTFOLIO</a></li>
-                                <li class="by"><a class="nav-link text-dark" href="">BLOG</a></li>
-                                <li class="by"><a class="nav-link text-dark" href="">SHOP</a></li>
-                                <li class="by"><a class="nav-link text-dark" href="">ELEMENTS</a></li>
-                            -->
                         </ul>
-                        <a @click.prevent="toggleLIst" href="">
+                        <a @click.prevent="toggleLIst" class="me-2" href="">
                             <img class="w-75" src="./pictures/svg/svg-1.svg" alt="">
                         </a>
                     </nav>
@@ -58,7 +51,7 @@
         <main>
             <div class="container-fluid">
                 <!-- JUMBOTRON -->
-                <div class="row mt-3 mb-5">
+                <div class="row mt-5 mb-5">
 
                     <!--parte sx jumbo-->
                     <div class="col-6 d-flex justify-content-end">
@@ -72,6 +65,7 @@
                             </p>
                             <button type="button" class="but1 text-dark fw-bold mt-3">READ MORE</button>
                         </div>
+                        <i class="fa-solid fa-chevron-left leaf2 rounded-circle ms-4"></i>
                     </div>
 
                     <!--parte dx jumbo-->
@@ -101,15 +95,18 @@
                         <div class="leaf6">
                             <img class="w-75" src="./pictures/h-2-slider-img-17.png" alt="">
                         </div>
+                        <i
+                            class="fa-solid fa-chevron-right me-3 rounded-circle position-absolute top-50 end-0 translate-middle-y"></i>
                     </div>
                 </div>
-                <div class="gd">
-                    <div class="slider"></div>
-                    <div class="slider"></div>
-                    <div class="slider"></div>
+                <div class="d-flex justify-content-center">
+                    <div class="slider rounded-circle"></div>
+                    <div class="slider rounded-circle"></div>
+                    <div class="slider rounded-circle"></div>
                 </div>
+
                 <!-- BLOCCO CARDS -->
-                <div class="row g-0 pt-5">
+                <div class="row g-0 pt-2">
                     <!--card 1-->
                     <div class="col-4">
                         <img class="w-100" src="./pictures/h-2-port-img-1.jpg" alt="">
@@ -194,7 +191,7 @@
                 </div>
             </div>
 
-            <!--parte del work process-->
+            <!-- PARTE DEL WORK PROCESS -->
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center m-5">
@@ -204,7 +201,8 @@
                         </h2>
                     </div>
                     <div class="col-9">
-                        <img class="w-100 line" src="./pictures/svg/svg-3.svg" alt="">
+                        <img class="w-75 position-absolute top-0 start-50 translate-middle-x"
+                            src="./pictures/svg/svg-3.svg" alt="">
                         <div class="row mb-5">
                             <div class="col-3 text-center">
                                 <i class="fa-solid fa-lightbulb icon rounded-circle p-5"></i>
