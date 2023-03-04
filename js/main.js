@@ -4,14 +4,16 @@ const app = createApp({
     data() {
         return {
             /* ARRAY CON ELEMENTI DEL MENU */
-            menu: [
-                'HOME',
-                'PAGES',
-                'PORTFOLIO',
-                'BLOG',
-                'SHOP',
-                'ELEMENTS'
-            ],
+            menu: {
+                links: [
+                    'HOME',
+                    'PAGES',
+                    'PORTFOLIO',
+                    'BLOG',
+                    'SHOP',
+                    'ELEMENTS'
+                ],
+            },
 
             showList: false,
         };
